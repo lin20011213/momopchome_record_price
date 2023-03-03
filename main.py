@@ -37,8 +37,9 @@ def momo_goods_price(i_code):
     list=[]
     for i in a:
         if i.find('b',class_="price") != None:
-            list.append(i.find('b',class_="price"))
-            print(i.find('b',class_="price"))
+            list.append(i.find('b',class_="price").contents[0])
+            print(i.find('b',class_="price").contents[0])
     return list
-            
+
+momo_goods_price("9750948")
 
