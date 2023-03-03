@@ -40,6 +40,11 @@ def momo_goods_price(i_code):
             list.append(i.find('b',class_="price").contents[0])
             print(i.find('b',class_="price").contents[0])
     return list
-
+'''
+#範例momo
 momo_goods_price("9750948")
 
+#範例pchome
+pchome_goods_price("DSABKB-A900FXVUZ")
+
+'''
